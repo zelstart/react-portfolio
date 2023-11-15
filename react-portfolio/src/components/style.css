@@ -1,0 +1,115 @@
+/* :root {
+    --bg: #0E1428,
+    --accent1: #40798C,
+    --acc1-light: #93B7BE,
+    --accent2: #7B9E89,
+    --acc2-light: #CFE0C3,
+
+} */
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #0E1428;
+    position: fixed;
+    top: 0;
+    border-bottom: 6px solid #7B9E89;
+}
+
+.header h1 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-shadow: -4px -1px 0px #40798C;
+    margin: 0;
+}
+
+/* NAV STUFF */
+.header nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.header nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #93B7BE;
+    letter-spacing: .1em;
+    margin: 0 15px;
+    text-decoration: none !important;
+}
+
+.header nav a:hover {
+    color: white;
+}
+
+/* ABOUT ME */
+
+.profile-pic {
+    object-fit: cover;
+    max-width: 150px;
+    border-radius: 4px;
+    box-shadow: 4px 2px 7px #00000044;
+}
+
+
+.about-me .cstm-card-header {
+    background-color: #0E1428 !important;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+
+}
+
+.about-me .-cstm-card-body {
+  
+}
+
+.about-me {
+    border-top: none !important;
+    box-shadow: 4px 2px 7px #00000044;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100vw;
+    height: 50px;
+    background: #0E1428;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h4 {
+    color: white;
+    font-family: 'bebas neue', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 5rem;
+    }
+
+    .header nav a {
+        font-size: .9rem;
+        letter-spacing: 0;
+        margin: 0px 15px;
+    }
+}
