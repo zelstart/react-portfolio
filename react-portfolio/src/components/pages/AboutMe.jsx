@@ -24,13 +24,18 @@ function AboutMe() {
                                         <Col xs={12} md={3} lg={2} className="d-flex justify-content-center">
                                             <img src={profilePic} alt="a person. they look like they hate being photographed!" className="profile-pic" />
                                         </Col>
-                                        <Col xs={12} md={8} lg={10} className='text-field' >
+                                        <Col xs={12} md={8} lg={10}  >
+                                            <div className='text-field'>
                                             <p className='about-me-text'>
                                                 Hello! My name is Zel. I am just entering the world of web development. I am currently on track to graduate the Full Stack Web Development Bootcamp from UNH in mid december! Here's a bunch of text blah blah blah. Gotta write more stuff. Wow. Look at all these things. Could I have used lorem ipsum here? Yeah. Did I feel like finding the generator? No. So here is some stuff.
                                             </p>
                                             <p className='about-me-text'>
                                                 Stream of conciousness right onto the page. I wonder how many times a year I think about the Clone Wars. It's gotta be at least two or three times a week. Is this my Roman Empire? It's just. The characters. They're all so lovable. Plo Koon? Plo's Bro's? So wholesome. Fuck the emperor that guy was such a jerk, RIP to my homie Plo Koon.
                                             </p>
+                                            <p className="about-me-text">
+                                                Wow! Still need to say more? Okay... Well. I have three cats and by gosh by golly they are just the cutest. They're my lil babies. I love them. My oldest is named Riku and he's only got three legs! But he's such a lil trooper. Andi is second oldest and she is an absolute princess. The most well behaved cat I've ever met. Then there's Nyx. He's the youngest, anxious-est, and sweetest! I have truly never met a cat so sweet.
+                                            </p>
+                                            </div>
                                         </Col>
                                     </Row>
                                 </Card.Body>

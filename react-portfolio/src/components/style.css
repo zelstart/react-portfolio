@@ -72,8 +72,9 @@
 
 .text-field {
     overflow: auto;
-    max-height: 200px; 
-    padding-top: 10px;
+    max-height: 185px; 
+    padding-top: 0px;
+    margin-top: 15px;
 }
 
 .folder {
@@ -148,7 +149,7 @@
     .about-me .cat-peek {
         position: absolute;
         bottom: -44px;
-        right: 0px;
+        right: 10px;
         max-width: 20%;
     }
 }
