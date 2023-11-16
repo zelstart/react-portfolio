@@ -13,7 +13,7 @@ function AboutMe() {
                     <Card className='about-me'>
                         <img src={catPeek} alt="cat peeking" className="cat-peek" />
                         <Row className='folder'>
-                            <Col xs={5} md={3} lg={2}>
+                            <Col xs={6} sm={4} md={3} lg={3}>
                                 <Card.Header className='cstm-card-header'>
                                     who i am!
                                 </Card.Header>

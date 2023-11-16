@@ -93,8 +93,6 @@
     position: relative;
 }
 
-
-
 /* .cat-peek {
     position: absolute;
     bottom: -43.5px;
@@ -152,7 +150,6 @@
         bottom: -44px;
         right: 0px;
         max-width: 20%;
-        /* adjust this value as needed */
     }
 }
 
@@ -166,6 +163,9 @@
         font-size: .9rem;
         letter-spacing: 0;
         margin: 0px 15px;
+    }
+    .about-me .cat-peek {
+    display: none;
     }
 
 
