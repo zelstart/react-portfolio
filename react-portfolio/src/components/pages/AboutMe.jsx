@@ -9,20 +9,20 @@ function AboutMe() {
         
         <Row className="about-me vw-100 justify-content-center my-3">
 
-            <Col xs={4} sm={4} md={4} lg={2} className='cstm-tab'>
+            <Col xs={4} sm={4} md={3} lg={2} className='cstm-tab'>
                 who i am!
             </Col>
-            <Col xs={7} sm={7} md={6} lg={8} className='test'></Col>
+            <Col xs={7} sm={7} md={7} lg={8} className='test'></Col>
 
             
             <Col xs={11} sm={11} md={10} lg={10} className='cstm-body'>
                     <Row>
 
-                        <Col xs={12} sm={12} md={3} lg={3} className="d-flex justify-content-center my-1">
+                        <Col xs={12} sm={12} md={12} lg={3} className="d-flex justify-content-center my-1">
                             <img src={profilePic} alt="a person. they look like they hate being photographed and kinda wish this part was optional!" className="profile-pic" />
                         </Col>
 
-                        <Col xs={12} sm={12} md={9} lg={9}>
+                        <Col xs={12} sm={12} md={12} lg={9}>
                             <div className='text-field'>
                                 <p className='about-me-text'>
                                     Hello! My name is Zel. I am just entering the world of web development. I am currently on track to graduate the Full Stack Web Development Bootcamp from UNH in mid december! Here's a bunch of text blah blah blah. Gotta write more stuff. Wow. Look at all these things. Could I have used lorem ipsum here? Yeah. Did I feel like finding the generator? No. So here is some stuff.
