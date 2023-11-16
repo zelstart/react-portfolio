@@ -123,6 +123,12 @@
 }
 
 
+/* CONTACT ME */
+
+.message-submit {
+    background-color: var(--accent2);
+}
+
 /* FOOTER */
 .footer {
     width: 100vw;
