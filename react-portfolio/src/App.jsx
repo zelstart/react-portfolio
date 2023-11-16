@@ -10,18 +10,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="main-container">
         <Header />
-        <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contactme" element={<ContactMe />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
-        </Routes>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contactme" element={<ContactMe />} />
+            {/* <Route path="/resume" element={<Resume />} /> */}
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
   );
 }
+
 
 export default App;

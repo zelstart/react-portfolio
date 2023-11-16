@@ -9,8 +9,24 @@
 
 }
 
-/* HEADER */
-.header {
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    height: calc(100vh - 200px - 50px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+  
+
+  /* HEADER */
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +34,11 @@
     width: 100vw;
     height: 200px;
     background-color: var(--bg);
-    position: fixed;
     top: 0;
     border-bottom: 6px solid var(--acc2-light);
-}
-
+  }
+  
+  /* Rest of your CSS */
 .header h1 {
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -31,14 +47,14 @@
     letter-spacing: 0.3rem;
     text-shadow: -4px -1px 0px var(--acc1-light);
     margin: 0;
+    white-space: nowrap;
 }
 
 /* NAV STUFF */
 .header nav {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
     white-space: nowrap;
 }
 
@@ -79,12 +95,10 @@
 
 .folder {
     margin-top: -3.6rem !important;
+    max-height: 50vh;
 }
 
-
-
 .about-me {
-    margin-top: 8rem;
     border-top: 12px solid var(--bg) !important;
     border-left: 12px solid var(--bg) !important;
     border-bottom: 12px solid var(--accent2) !important;
@@ -126,7 +140,34 @@
 /* CONTACT ME */
 
 .message-submit {
-    background-color: var(--accent2);
+    font-family: 'Bebas Neue', sans-serif !important;
+    margin-top: 10px;
+    background-color: var(--accent1) !important;
+    color: white !important;
+    border: none !important;
+    font-size: 1.6rem !important;
+    width: 200px;
+    height: 50px; 
+    
+}
+
+.message-submit:hover {
+    background-color: var(--accent2) !important;
+    color: white !important;
+    border: none;
+}
+
+.contact-card-header {
+    background-color: var(--accent1) !important;
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: .20rem;
+    padding: 25px 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -160,8 +201,16 @@
     }
 }
 
-/* MOBILE VIEW */
+
 @media (max-width: 767px) {
+.header {
+    height: 125px;
+}
+
+.main-content {
+    height: calc(100vh - 125px - 50px); 
+}
+
     .header h1 {
         font-size: 5rem;
     }
@@ -171,10 +220,14 @@
         letter-spacing: 0;
         margin: 0px 15px;
     }
+    
+    .about-me-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: .80rem;
+    }
+    
     .about-me .cat-peek {
     display: none;
     }
-
-
 }
 
