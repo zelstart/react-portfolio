@@ -10,7 +10,7 @@ function AboutMe() {
         <Row className="about-me vw-100 justify-content-center my-3">
 
             <Col xs={4} sm={4} md={3} lg={2} className='cstm-tab'>
-                who i am!
+                ZEL START
             </Col>
             <Col xs={7} sm={7} md={7} lg={8} className='test'></Col>
 
