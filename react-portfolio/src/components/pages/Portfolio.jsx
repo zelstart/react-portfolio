@@ -1,10 +1,17 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import ProjectCard from '../ProjectCard';
+import { projectData } from '../../assets/data/data';
 
 function Portfolio() {
     return (
-        <main className="container-fluid vh-100 vw-100 d-flex align-items-center mt-3 mt-md-0">
-            </main>
+        <Row className="row vw-100 justify-content-center p-5">
+            {projectData.map((project, index) => (
+                <Col md={4} key={index}>
+                    <ProjectCard project={project} />
+                </Col>
+            ))}
+        </Row>
     )
 }
 
