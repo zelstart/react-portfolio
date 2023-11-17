@@ -162,11 +162,25 @@
 
 /* PORTFOLIO */
 
+.project-img {
+    object-fit: cover;
+    object-position: left;
+    height: 250px;
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
 .project-card {
-    margin: 5px;
+    overflow: hidden;
+    margin: 6px;;
 }
 .project-card:hover .card-img-top {
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .project-card .card-overlay {
@@ -178,13 +192,26 @@
     opacity: 1;
 }
 
-.project-img {
-    object-fit: cover;
-    object-position: left;
-    height: 250px;
-    width: 100%;
-    border-radius: 4px;
+.project-details .project-description,
+.project-details .project-link {
+    display: none;
 }
+
+.project-card:hover .project-description,
+.project-card:hover .project-link {
+    display: block;
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px var(--shadow);
+}
+
+
 
 /* FOOTER */
 .footer {
