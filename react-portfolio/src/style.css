@@ -131,7 +131,7 @@
 .message-submit {
     font-family: 'Bebas Neue', sans-serif !important;
     margin-top: 10px;
-    background-color: var(--accent1) !important;
+    background-color: var(--accent2) !important;
     color: white !important;
     border: none !important;
     font-size: 1.6rem !important;
@@ -141,13 +141,13 @@
 }
 
 .message-submit:hover {
-    background-color: var(--accent2) !important;
+    background-color: var(--acc2-light) !important;
     color: white !important;
     border: none;
 }
 
 .contact-card-header {
-    background-color: var(--accent1) !important;
+    background-color: var(--accent2) !important;
     color: white !important;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -225,6 +225,9 @@
     filter: brightness(50%);
 }
 
+.project-card:hover .project-title {
+    background: var(--accent2);
+}
 
 /* typography */
 .project-title {
@@ -235,7 +238,7 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem !important;
     color: white !important;
-    background: var(--accent2);
+    background: var(--accent1);
     padding: 5px 10px 5px 15px;
 }
 
