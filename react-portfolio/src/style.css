@@ -171,46 +171,43 @@
     transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-img {
-    transform: scale(1.05);
-}
-
 .project-card {
+    transition: all 0.3s ease;
     overflow: hidden;
-    margin: 6px;;
-}
-.project-card:hover .card-img-top {
-    filter: brightness(30%);
+    margin: 5px;
 }
 
-.project-card .card-overlay {
+.project-details {
+    transition: all 1s ease;
+    transform: translateY(0);
+}
+
+.project-card:hover .project-details {
+    transform: translateY(-20px);
+}
+
+.project-description,
+.project-link {
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover .card-overlay {
-    opacity: 1;
-}
-
-.project-details .project-description,
-.project-details .project-link {
-    display: none;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateX(-20px);
 }
 
 .project-card:hover .project-description,
 .project-card:hover .project-link {
-    display: block;
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.project-card {
-    transition: all 0.3s ease;
+/* hover */
+.project-card:hover .project-img {
+    transform: scale(1.05);
 }
 
 .project-card:hover {
     transform: scale(1.02);
-    box-shadow: 0px 10px 20px var(--shadow);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 
 /* FOOTER */
