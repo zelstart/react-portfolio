@@ -1,50 +1,52 @@
-
-
-
-
 import React, { useState, useEffect } from 'react';
 
-function Header() {
-    const [isScrollingDown, setIsScrollingDown] = useState(false);
-    let lastScrollTop = 0;
+// scroll direction hook
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
 
-    useEffect(() => {
-      function handleScroll() {
-        let st = window.scrollY || document.documentElement.scrollTop;
-        if (st > lastScrollTop){
-            setIsScrollingDown(true);
-        } else if (st < lastScrollTop) {
-            setIsScrollingDown(false);
-        }
-        // set lastScrollTop equal to the current scroll position
-        lastScrollTop = st <= 0 ? 0 : st;
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
     }
+  }, [scrollDirection]);
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+  return scrollDirection;
+};
 
-    return (
-      <header className="header">
-          <div className={`header-content ${isScrollingDown ? 'hide' : 'show'}`}>
-              <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
-                  <div>
-                      <h1>hello!</h1>
-                  </div>
-              </div>
-          </div>
+// header component
+function Header() {
+  const scrollDirection = useScrollDirection();
+  
+  return (
+    <header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+      <div className={`header-content ${scrollDirection === "down" ? 'hide' : 'show'}`}>
+        <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
           <div>
-              <nav>
-                  <a href="/">about me</a>
-                  <a href="/portfolio">portfolio</a>
-                  <a href="#">resume</a>
-                  <a href="/contactme">contact me</a>
-              </nav>
+            <h1>hello! :)</h1>
           </div>
-      </header>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <a href="/">about me</a>
+          <a href="/portfolio">portfolio</a>
+          <a href="#">resume</a>
+          <a href="/contactme">contact me</a>
+        </nav>
+      </div>
+    </header>
   );
-}
+};
 
 export default Header;
