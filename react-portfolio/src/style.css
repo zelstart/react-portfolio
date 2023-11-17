@@ -16,7 +16,7 @@
   }
   
   .main-content {
-    min-height: calc(100vh - 200px - 50px); 
+    min-height: calc(100vh - 10vh); 
     display: flex;
     justify-content: center;
     align-items: center;
