@@ -161,7 +161,6 @@
 
 
 /* PORTFOLIO */
-
 .project-img {
     object-fit: cover;
     object-position: left;
@@ -177,13 +176,18 @@
     margin: 5px;
 }
 
+.project-description-container {
+    padding-bottom: 50px;
+}
+
 .project-details {
     transition: all 1s ease;
     transform: translateY(0);
+    position: relative;
 }
 
-.project-card:hover .project-details {
-    transform: translateY(-20px);
+.project-link {
+    display: block;
 }
 
 .project-description,
@@ -193,22 +197,43 @@
     transform: translateX(-20px);
 }
 
+
+/* hover */
 .project-card:hover .project-description,
 .project-card:hover .project-link {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* hover */
 .project-card:hover .project-img {
     transform: scale(1.05);
 }
 
-.project-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+.project-card:hover .project-details {
+    transform: translateY(-50px);
 }
 
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px var(--shadow);
+}
+
+.project-img:hover {
+    filter: brightness(50%);
+}
+
+
+/* typography */
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem !important;
+    margin-left: 5px;
+    color: var(--accent1);
+}
 
 /* FOOTER */
 .footer {
