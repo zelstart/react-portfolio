@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 
 function ProjectCard({ project }) {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <Card className='project-card'>
-            <Card.Img variant="top" src={project.image} alt={project.name} className='project-img' />
+        <Card className='project-card' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            <Card.Img variant="top" src={project.image} alt={project.name} className={`project-img ${isHovered ? 'darken' : ''}`} />
             <div className="card-img-overlay d-flex flex-column justify-content-end">
                 <Card.Title className='project-title'>{project.name}</Card.Title>
                 <div className="project-description-container">
