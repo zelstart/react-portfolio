@@ -3,7 +3,7 @@
 const projectData = [
     {
         name: 'Social Network API',
-        description: 'A RESTful API for a social network web application where users can share their thoughts, react to friends’ thoughts, and add other uses to their friends list.',
+        description: 'A RESTful API for a social network web application where users can share their thoughts, react to friends’ thoughts, and add other users to their friends list.',
         liveWebsite: null,
         githubRepo: 'https://github.com/zelstart/social-network-api',
         image: 'src/assets/images/project-images/placeholder-image.jpg',
