@@ -1,0 +1,31 @@
+
+/* NAV STUFF */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    background-color: var(--bg);
+    height: 5vh;
+}
+
+.navlink {
+    font-family: 'Roboto', sans-serif;
+    color: var(--acc1-light) !important;
+    letter-spacing: .1em;
+    margin: 0 15px;
+    text-decoration: none !important;
+}
+
+.navlink:hover {
+    color: white !important;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 768px) {
+a {
+    font-size: .9rem;
+    letter-spacing: 0;
+    margin: 0px 15px;
+}
+}
