@@ -1,7 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import profilePic from '../../assets/images/profile-pic.jpg';
-import catPeek from '../../assets/images/cat-peek-1.png';
+import '../../../style.css';
+import './AboutMe.css';
+import profilePic from '../../../assets/images/profile-pic.jpg';
+import catPeek from '../../../assets/images/cat-peek-1.png';
+
 {/* <img src={catPeek} alt="cat peeking" className="cat-peek" /> */ }
 
 function AboutMe() {

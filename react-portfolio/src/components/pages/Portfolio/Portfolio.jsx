@@ -1,7 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import ProjectCard from '../ProjectCard';
-import { projectData } from '../../assets/data/data';
+import ProjectCard from '../../ProjectCard/ProjectCard';
+import { projectData } from '../../../assets/data/data';
+import './Portfolio.css';
+import '../../../style.css';
+
 
 function Portfolio() {
     return (

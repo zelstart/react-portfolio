@@ -1,0 +1,80 @@
+/* ABOUT ME */
+
+.profile-pic {
+    object-fit: cover;
+    max-width: 85%;
+    border-radius: 4px;
+    box-shadow: 4px 2px 7px var(--shadow); 
+}
+
+.text-field {
+    margin-top: 10px;
+    max-height: 90%; 
+    overflow: auto;
+}
+
+.about-me-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: .90rem;
+}
+
+.cstm-body {
+    border-top: 6px solid var(--bg);
+    /* border-left: 5px solid var(--bg);
+    border-bottom: 5px solid var(--accent2); */
+    border-right: 5px solid var(--accent2);
+    box-shadow: 4px 2px 7px var(--shadow);
+    position: relative;
+    padding: 30px;
+}
+
+/* .cat-peek {
+    position: absolute;
+    bottom: -43.5px;
+    right: 0;
+    transform: calc(100% + 12px);
+    width: 20%;
+} */
+
+.cstm-tab {
+    background-color: var(--bg) !important;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .20rem;
+    padding: 15px 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 3px solid var(--bg);
+    
+}
+
+.cstm-body {
+    background-color: var(--acc2-light-t);
+}
+
+
+/* SMALLER SCREENS */
+@media (min-width: 768px) {
+    .about-me .cat-peek {
+        position: absolute;
+        bottom: -44px;
+        right: 10px;
+        max-width: 20%;
+    }
+
+    .about-me-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: .80rem;
+    }
+    
+    .about-me .cat-peek {
+    display: none;
+    }
+
+    .profile-pic {
+        max-width: 50%;
+    }
+} 

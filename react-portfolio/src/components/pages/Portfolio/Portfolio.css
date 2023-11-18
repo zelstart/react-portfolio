@@ -1,0 +1,102 @@
+/* PORTFOLIO */
+.project-img {
+    object-fit: cover;
+    object-position: left;
+    height: 250px;
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.project-img.darken {
+    filter: brightness(0.2);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.project-description-container {
+    padding-bottom: 50px;
+}
+
+.project-details {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    position: relative;
+}
+
+.project-link {
+    display: block;
+}
+
+.project-description,
+.project-link {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-20px);
+}
+
+
+/* hover */
+.project-card:hover .project-description,
+.project-card:hover .project-link {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-details {
+    transform: translateY(-50px);
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px var(--shadow);
+}
+
+.project-img:hover {
+    filter: brightness(50%);
+}
+
+.project-card:hover .project-title {
+    background: var(--accent2);
+}
+
+/* typography */
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem !important;
+    color: white !important;
+    background: var(--accent1);
+    padding: 5px 10px 5px 15px;
+}
+
+.project-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: white;
+}
+
+.project-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    color: var(--accent2);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: var(--acc2-light);
+}

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Form, Button } from 'react-bootstrap';
 import * as EmailValidator from 'email-validator';
+import './ContactMe.css';
+import '../../../style.css';
+
 
 function ContactMe() {
     const [formData, setFormData] = useState({

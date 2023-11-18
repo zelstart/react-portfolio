@@ -1,0 +1,17 @@
+/* FOOTER */
+.footer {
+    width: 100vw;
+    height: 50px;
+    background: var(--bg);
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h4 {
+    color: white;
+    font-family: 'bebas neue', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
