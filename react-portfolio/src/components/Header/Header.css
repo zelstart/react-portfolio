@@ -15,11 +15,25 @@
     font-size: 5rem;
     font-weight: 500;
     letter-spacing: 0.6rem;
-    text-shadow: -4px -1px 0px var(--acc1-light);
+    /* text-shadow: -3px -1px 0px var(--acc1-light); */
     margin: 0;
     white-space: nowrap;
   }
 
+  .header h1:after {
+    content: '|'; /* typewriter cursor */
+    animation: blink 1s infinite;
+    text-shadow: none;
+  }
+
+  .header h1.hide-cursor:after {
+    display: none;
+  }
+  
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
 
   /* SMALLER SCREENS */
   @media (max-width: 768px) {
