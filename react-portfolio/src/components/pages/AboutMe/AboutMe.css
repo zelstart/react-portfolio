@@ -1,10 +1,10 @@
 .profile-pic {
     object-fit: cover;
     max-width: 90%;
-    /* border-radius: 4px; */
     box-shadow: 7px 7px 1px var(--dark); 
     margin: 8px;
 }
+
 
 .about-me-text {
     font-family: 'Roboto', sans-serif;
@@ -16,6 +16,10 @@
 }
 
 .nav-tabs .nav-link {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    letter-spacing: 0.09rem !important;
     border-radius: 0;
     color: var(--accent1)
 }
@@ -23,15 +27,6 @@
 .nav-tabs .nav-link:hover {
     color: var(--accent2)
 }
-
-
-.nav-tabs .nav-link {
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 500 !important;
-    font-style: italic !important;
-    letter-spacing: 0.09rem !important;
-}
-
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: var(--dark) !important;
 }
@@ -50,3 +45,25 @@ body.dark-mode .nav-tabs .nav-link.active {
     color: var(--accent2) !important;
     border-bottom: var(--dark) solid 1px !important;
 }
+
+/* SMALLER SCREENS */
+
+
+@media screen and (max-width: 850px) {
+    .nav-tabs .nav-link {
+        font-size: .8rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: .7rem !important;
+    }
+
+    .profile-pic {
+        max-width: 50%;
+        margin: 0;
+    }
+
+
+    }
