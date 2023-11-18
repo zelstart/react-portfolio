@@ -5,8 +5,9 @@ import Footer from './components/Footer/Footer';
 import AboutMe from './components/pages/AboutMe/AboutMe';
 import Portfolio from './components/pages/Portfolio/Portfolio';
 import ContactMe from './components/pages/ContactMe/ContactMe';
-import './style.css';
+import TestingPage from './components/pages/TestingPage/TestingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </div>
         <main className="main-content">
           <Routes>
+            <Route path="/testingpage" element={<TestingPage />} />
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contactme" element={<ContactMe />} />
@@ -27,6 +29,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+
   );
 }
 
