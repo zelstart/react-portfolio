@@ -41,9 +41,10 @@ body.dark-mode {
     border: 1px inset rgb(13, 41, 13);
 } */
 
-/* .test {
-background: rgb(175, 94, 94);
-} */
+.test {
+/* background: rgb(175, 94, 94); */
+/* border: blue 1px solid; */
+}
 
 
 

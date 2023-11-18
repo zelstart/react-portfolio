@@ -1,79 +1,52 @@
-/* ABOUT ME */
-
 .profile-pic {
     object-fit: cover;
-    max-width: 85%;
-    border-radius: 4px;
-    box-shadow: 4px 2px 7px var(--shadow); 
-}
-
-.text-field {
-    margin-top: 10px;
-    max-height: 90%; 
-    overflow: auto;
+    max-width: 90%;
+    /* border-radius: 4px; */
+    box-shadow: 7px 7px 1px var(--dark); 
+    margin: 8px;
 }
 
 .about-me-text {
     font-family: 'Roboto', sans-serif;
     font-size: .95rem;
+    color: var(--dark);
+    letter-spacing: 0.07rem;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+    color: var(--accent1)
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--accent2)
+}
+
+
+.nav-tabs .nav-link {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    letter-spacing: 0.09rem !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--dark) !important;
+}
+/* DARK MODE */
+
+body.dark-mode .about-me-text {
     color: white;
-    letter-spacing: 0.06rem;
 }
 
-.cstm-body {
-    border-top: 6px solid var(--dark);
-    /* border-left: 5px solid var(--dark);
-    border-bottom: 5px solid var(--accent2); */
-    border-right: 5px solid var(--accent2);
-    box-shadow: 4px 2px 7px var(--shadow);
-    position: relative;
-    padding: 30px;
-    background-color: var(--dark);
+body.dark-mode .profile-pic{
+    box-shadow: -7px -7px 1px var(--accent1); 
 }
 
-/* .cat-peek {
-    position: absolute;
-    bottom: -43.5px;
-    right: 0;
-    transform: calc(100% + 12px);
-    width: 20%;
-} */
-
-.cstm-tab {
-    background-color: var(--dark) !important;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: .20rem;
-    padding: 15px 25px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom: 3px solid var(--dark);
-    
+body.dark-mode .nav-tabs .nav-link.active {
+    background: var(--dark) !important;
+    color: var(--accent2) !important;
+    border-bottom: var(--dark) solid 1px !important;
 }
-
-
-/* SMALLER SCREENS */
-@media (min-width: 768px) {
-    .about-me .cat-peek {
-        position: absolute;
-        bottom: -44px;
-        right: 10px;
-        max-width: 20%;
-    }
-
-    .about-me-text {
-        font-family: 'Roboto', sans-serif;
-        font-size: .80rem;
-    }
-    
-    .about-me .cat-peek {
-    display: none;
-    }
-
-    .profile-pic {
-        max-width: 50%;
-    }
-} 
