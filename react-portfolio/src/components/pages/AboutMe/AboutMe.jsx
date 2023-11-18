@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import '../../../style.css';
 import './AboutMe.css';
+import '../../../style.css';
 import profilePic from '../../../assets/images/profile-pic.jpg';
 import catPeek from '../../../assets/images/cat-peek-1.png';
 
@@ -10,7 +10,7 @@ import catPeek from '../../../assets/images/cat-peek-1.png';
 function AboutMe() {
     return (
 
-        <Row className="about-me vw-100 justify-content-center my-3">
+        <Row className="about-me justify-content-center my-3">
 
             <Col xs={4} sm={4} md={3} lg={2} className='cstm-tab'>
                 who i am!

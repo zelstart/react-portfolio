@@ -12,8 +12,10 @@ function App() {
   return (
     <Router>
       <div className="main-container">
+        <div className='header-nav'>
         <Header />
         < Nav />
+        </div>
         <main className="main-content">
           <Routes>
             <Route path="/" element={<AboutMe />} />

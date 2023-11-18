@@ -8,7 +8,7 @@ import '../../../style.css';
 
 function Portfolio() {
     return (
-        <Row className="row vw-100 justify-content-center p-5">
+        <Row className="row justify-content-center p-5">
             {projectData.map((project, index) => (
                 <Col md={4} key={index}>
                     <ProjectCard project={project} />

@@ -8,7 +8,6 @@
     height: 15vh;
     background-color: var(--bg);
     top: 0;
-    border: inset 1px red;
   }
 
   .header h1 {
@@ -20,17 +19,16 @@
     text-shadow: -4px -1px 0px var(--acc1-light);
     margin: 0;
     white-space: nowrap;
-    border: inset 1px red;
   }
 
 
   /* SMALLER SCREENS */
   @media (max-width: 768px) {
     .header h1 {
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     .header {
-      height: 125px;
+      height: 10vh;
     }
   }
