@@ -8,7 +8,7 @@
     --acc2-light-t: #CFE0C340;
 }
 
-body {
+ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+    min-width: 100vw;
 }
 
 .main-content {
@@ -26,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     overflow: auto;
-}
+} 
 
 /* Debugging stuff */
 
@@ -41,8 +42,8 @@ background: rgb(175, 94, 94);
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .main-content {
         min-height: calc(100vh - 125px - 50px);
     }
-}
+} */

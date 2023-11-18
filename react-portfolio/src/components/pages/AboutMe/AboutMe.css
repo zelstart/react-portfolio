@@ -26,6 +26,7 @@
     box-shadow: 4px 2px 7px var(--shadow);
     position: relative;
     padding: 30px;
+    background-color: var(--acc2-light-t);
 }
 
 /* .cat-peek {
@@ -49,10 +50,6 @@
     border-top-left-radius: 5px;
     border-bottom: 3px solid var(--bg);
     
-}
-
-.cstm-body {
-    background-color: var(--acc2-light-t);
 }
 
 
