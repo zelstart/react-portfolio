@@ -39,9 +39,9 @@
     display: none;
   }
 
-  /* DARK MODE STYLES */
-  .header.dark-mode h1 {
-    color: var(--acc2-light);
+  /* DARK MODE */
+  body.dark-mode h1 {
+    color: var(--accent1);
     text-shadow: none;
   }
   

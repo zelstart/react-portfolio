@@ -20,6 +20,16 @@ nav {
     color: var(--accent2) !important;
 }
 
+/* DARK MODE */
+
+body.dark-mode .navlink {
+    color: white !important;
+}
+
+body.dark-mode .navlink:hover {
+    color: var(--acc1-light) !important;
+}   
+
 /* SMALLER SCREENS */
 @media (max-width: 768px) {
 .navlink {

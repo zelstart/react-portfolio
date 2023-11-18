@@ -15,6 +15,7 @@
     transition: all 0.3s ease;
     overflow: hidden;
     margin: 5px;
+    border: none;
 }
 
 .project-description-container {
