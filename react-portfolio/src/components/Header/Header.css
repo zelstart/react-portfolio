@@ -9,6 +9,14 @@
     top: 0;
   }
 
+  .header .dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 0.8em;
+  }
+
   .header h1 {
     color: var(--dark);
     font-family: 'Roboto', sans-serif;
@@ -19,6 +27,7 @@
     margin: 0;
     white-space: nowrap;
   }
+  
 
   .header h1:after {
     content: '|'; /* typewriter cursor */
@@ -28,6 +37,12 @@
 
   .header h1.hide-cursor:after {
     display: none;
+  }
+
+  /* DARK MODE STYLES */
+  .header.dark-mode h1 {
+    color: var(--acc2-light);
+    text-shadow: none;
   }
   
   @keyframes blink {

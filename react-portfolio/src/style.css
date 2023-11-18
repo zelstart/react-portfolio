@@ -8,10 +8,15 @@
     --acc2-light-t: #CFE0C340;
 }
 
- body {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
+}
+
+body.dark-mode {
+    background-color: var(--dark);
 }
 
 .main-container {
@@ -27,7 +32,7 @@
     display: flex;
     align-items: center;
     overflow: auto;
-} 
+}
 
 /* Debugging stuff */
 
