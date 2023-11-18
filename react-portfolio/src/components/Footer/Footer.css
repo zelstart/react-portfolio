@@ -2,7 +2,7 @@
 .footer {
     width: 100vw;
     height: 10vh;
-    background: var(--bg);
+    background: var(--dark);
     bottom: 0;
     width: 100%;
 }

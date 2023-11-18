@@ -40,8 +40,8 @@ function ContactMe() {
     return (
         <Container fluid>
             <Row className="justify-content-center">
-                <Col xs={12} sm={10} md={8} lg={8}>
-                    <Card className='contact-card'>
+                <Col xs={12} sm={10} md={8} lg={5}>
+                    <Card className='contact-card '>
                         <Card.Header className='contact-card-header'>
                             <h5>get in touch with me!</h5>
                         </Card.Header>

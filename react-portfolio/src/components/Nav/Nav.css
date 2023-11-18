@@ -17,7 +17,7 @@ nav {
 }
 
 .navlink:hover {
-    color: white !important;
+    color: var(--accent2) !important;
 }
 
 /* SMALLER SCREENS */

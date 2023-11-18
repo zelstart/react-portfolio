@@ -15,18 +15,20 @@
 
 .about-me-text {
     font-family: 'Roboto', sans-serif;
-    font-size: .90rem;
+    font-size: .95rem;
+    color: white;
+    letter-spacing: 0.06rem;
 }
 
 .cstm-body {
-    border-top: 6px solid var(--bg);
-    /* border-left: 5px solid var(--bg);
+    border-top: 6px solid var(--dark);
+    /* border-left: 5px solid var(--dark);
     border-bottom: 5px solid var(--accent2); */
     border-right: 5px solid var(--accent2);
     box-shadow: 4px 2px 7px var(--shadow);
     position: relative;
     padding: 30px;
-    background-color: var(--acc2-light-t);
+    background-color: var(--dark);
 }
 
 /* .cat-peek {
@@ -38,7 +40,7 @@
 } */
 
 .cstm-tab {
-    background-color: var(--bg) !important;
+    background-color: var(--dark) !important;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -48,7 +50,7 @@
     padding: 15px 25px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    border-bottom: 3px solid var(--bg);
+    border-bottom: 3px solid var(--dark);
     
 }
 

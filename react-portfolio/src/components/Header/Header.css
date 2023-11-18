@@ -6,12 +6,11 @@
     align-items: center;
     width: 100vw;
     height: 15vh;
-    background-color: var(--bg);
     top: 0;
   }
 
   .header h1 {
-    color: white;
+    color: var(--dark);
     font-family: 'Roboto', sans-serif;
     font-size: 5rem;
     font-weight: 500;
