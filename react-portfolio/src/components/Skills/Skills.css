@@ -1,0 +1,14 @@
+.skills {
+    background: var(--accent1) !important;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 2px;
+    font-size: .9rem;
+}
+
+/* DARK MODE */
+body.dark-mode .skills {
+    background: var(--accent1) !important;
+    color: white;
+}
