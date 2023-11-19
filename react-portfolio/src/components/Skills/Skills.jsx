@@ -8,7 +8,7 @@ function Skills() {
         <div className='my-2'>
             {skills.map((skill, index) => (
                 <Badge key={index} variant="secondary" className="mr-2 skills">
-                    {skill}
+                    {skill.name}
                 </Badge>
             ))}
         </div>
