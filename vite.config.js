@@ -7,7 +7,7 @@ export default {
   build: {
     outDir: 'dist', 
     rollupOptions: {
-      input: 'react-portfolio/index.html', 
+      input: 'index.html', 
     },
   },
 };
