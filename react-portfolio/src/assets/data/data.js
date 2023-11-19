@@ -16,10 +16,10 @@ const projectData = [
         image: 'src/assets/images/project-images/the-tech-blog.png',
     },
     {
-        name: 'Some other project...',
-        description: 'A RESTful API for a social network web application where users can share their thoughts, react to friends’ thoughts, and add other users to their friends list.',
+        name: 'e-commerce backend',
+        description: 'This E-Commerce Back End is a straightforward backend solution designed for managing categories, products, and tags in an e-commerce system.',
         liveWebsite: null,
-        githubRepo: 'https://github.com/zelstart/social-network-api',
+        githubRepo: 'https://github.com/zelstart/e-commerce-back-end',
         image: 'src/assets/images/project-images/pexels-544917.jpg',
     },
     {
