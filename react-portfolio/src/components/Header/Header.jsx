@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 import '../../style.css';
 
@@ -57,7 +59,9 @@ function Header() {
   return (
     <header className="header container-fluid d-flex flex-column justify-content-center align-items-center">
       <h1 ref={h1Ref}>hello!</h1>
-      <button className="dark-mode-toggle" onClick={toggleDarkMode}>Toggle Dark Mode</button>
+      <div className='lightswitch' onClick={toggleDarkMode}>
+    <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+  </div>
     </header>
   );
 }
