@@ -28,7 +28,6 @@ body.dark-mode {
 }
 
 .main-content {
-    min-height: calc(100vh - 15vh -10vh);
     display: flex;
     align-items: center;
     overflow: auto;
