@@ -4,7 +4,8 @@
   "main": "server/server.js",
   "scripts": {
     "server": "node server/server.js",
-    "start": "concurrently \"cd react-portfolio && npm run dev\" \"npm run server\""
+    "start": "concurrently \"cd react-portfolio && npm run dev\" \"npm run server\"",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
