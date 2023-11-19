@@ -20,21 +20,43 @@ function ContactMe() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-
+    
         const { name, email, message } = formData;
-
+    
         if (!name || !message) {
             alert('Name and message fields cannot be blank.');
             return;
         }
-
+    
         if (!EmailValidator.validate(email)) {
             alert('Please enter a valid email address.');
             return;
         }
-
-        console.log(formData);
-        alert('Your message has been sent! I will be in touch soon.');
+    
+        fetch('http://localhost:3000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();  
+        })
+        .then(data => {
+            if (data) {
+                const jsonData = JSON.parse(data);
+                alert('Your message has been sent! I will be in touch soon.');
+            } else {
+                alert('Your message has been sent! I will be in touch soon.');
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
 
     return (
