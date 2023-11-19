@@ -8,7 +8,7 @@ function Nav() {
                 <div className='navstuff'>
                     <a className='navlink' href="/">about me</a>
                     <a className='navlink' href="/portfolio">portfolio</a>
-                    <a className='navlink' href="#">resume</a>
+                    <a className='navlink' href="/resume">resume</a>
                     <a className='navlink' href="/contactme">contact me</a>
                 </div>
         </nav>
