@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Form, Button, Container } from 'react-bootstrap';
 import * as EmailValidator from 'email-validator';
+import validator from 'email-validator';
 import './ContactMe.css';
 import '../../../style.css';
 
