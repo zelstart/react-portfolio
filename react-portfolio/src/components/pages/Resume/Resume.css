@@ -1,0 +1,51 @@
+.resume h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.resume h2:hover {
+    color: var(--accent2);
+    cursor: pointer;
+}
+
+.proficiencies h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: default;
+}
+
+.skills-list {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05rem;
+    cursor: default;
+    padding-left: 12px;
+}
+
+.skills-list li:hover {
+    font-size: 1.1rem;
+}
+
+/* DARK MODE */
+
+body.dark-mode .resume h2 {
+    color: white;
+}
+
+body.dark-mode .resume h2:hover {
+    color: var(--acc2-light);
+}
+
+body.dark-mode .proficiencies h3 {
+    color: white;
+}   
+
+body.dark-mode .skills-list {
+    color: var(--acc1-light);
+}
