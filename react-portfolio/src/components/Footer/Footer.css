@@ -14,12 +14,13 @@
     padding: 10px;
 }
 
-
-
 .my-icons {
     color: white;
     margin: 10px 10px 0px;
     font-size: 2rem;
     cursor: pointer;
-    
+}
+
+.my-icons:hover {
+    color: var(--accent1);
 }
