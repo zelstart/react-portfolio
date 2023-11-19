@@ -18,7 +18,7 @@ function Footer() {
                 </Row>
                 <Row className="justify-content-center">
                     <Col xs="auto">
-                        <h4>©2023 zel start. all rights reserved.</h4>
+                        <h4>©2023 created by zel start.</h4>
                     </Col>
                 </Row>
             </Container>
