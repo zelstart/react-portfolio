@@ -5,7 +5,7 @@
   "scripts": {
     "server": "node server/server.js",
     "start": "concurrently \"cd react-portfolio && npm run dev\" \"npm run server\"",
-    "build": "react-scripts build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,8 @@
     "nodemailer": "^6.9.7"
   },
   "devDependencies": {
-    "concurrently": "^6.5.1"
+    "concurrently": "^6.5.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0"
   }
 }
