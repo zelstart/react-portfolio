@@ -34,7 +34,7 @@ function ContactMe() {
         }
 
         console.log(formData);
-        alert('Email has been sent - thank you!');
+        alert('Your message has been sent! I will be in touch soon.');
     };
 
     return (
@@ -45,12 +45,12 @@ function ContactMe() {
                         <Card.Header className='contact-card-header'>
                             <h5>get in touch with me!</h5>
                         </Card.Header>
-                        <Card.Body>
+                        <Card.Body className='contact-card-body'>
                             <Form onSubmit={handleFormSubmit}>
                                 <Row>
-                                    <Col>
+                                    <Col className='text-field'>
                                         <Form.Group>
-                                            <Form.Label>Name</Form.Label>
+                                            <Form.Label className='custom-label'>Name</Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 name="name"
@@ -61,9 +61,9 @@ function ContactMe() {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col>
+                                    <Col className='text-field'>
                                         <Form.Group>
-                                            <Form.Label>Email</Form.Label>
+                                            <Form.Label className='custom-label'>Email</Form.Label>
                                             <Form.Control
                                                 type="email"
                                                 name="email"
@@ -74,9 +74,9 @@ function ContactMe() {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col>
+                                    <Col className='text-field'>
                                         <Form.Group>
-                                            <Form.Label>Message</Form.Label>
+                                            <Form.Label className='custom-label'>Message</Form.Label>
                                             <Form.Control
                                                 as="textarea"
                                                 name="message"

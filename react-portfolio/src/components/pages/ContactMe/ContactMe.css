@@ -2,7 +2,7 @@
 .message-submit {
     font-family: 'Bebas Neue', sans-serif !important;
     margin-top: 10px;
-    background-color: var(--accent2) !important;
+    background-color: var(--accent1) !important;
     color: white !important;
     border: none !important;
     font-size: 1.6rem !important;
@@ -12,13 +12,13 @@
 }
 
 .message-submit:hover {
-    background-color: var(--acc2-light) !important;
+    background-color: var(--dark) !important;
     color: white !important;
     border: none;
 }
 
 .contact-card-header {
-    background-color: var(--accent2) !important;
+    background-color: var(--accent1) !important;
     color: white !important;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -29,3 +29,32 @@
     border-top-left-radius: 5px;
     text-align: center;
 }
+
+.contact-card-body {
+    background: var(--acc1-light) !important;
+    font: .9rem 'Roboto', sans-serif;
+}
+
+.custom-label {
+    margin-top: 20px;
+    font-weight: 500;
+    padding-left: 3px;
+    color: var(--dark)
+}
+
+/* body:not(.dark-mode) */
+ .card {
+    background-color: var(--accent1) !important;
+    padding: 6px;
+}
+
+/* DARK MODE */
+
+/* body.dark-mode .contact-card-body {
+    background: var(--dark) !important;
+
+}
+body.dark-mode .card {
+    background-color: var(--dark) !important;
+    padding: 6px;
+} */
