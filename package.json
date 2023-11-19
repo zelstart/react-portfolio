@@ -5,7 +5,7 @@
   "scripts": {
     "server": "node server/server.js",
     "start": "concurrently \"cd react-portfolio && npm run dev\" \"npm run server\"",
-    "build": "vite build"
+    "build": "vite build && cp public/_redirects dist/_redirects"
   },
   "keywords": [],
   "author": "",
