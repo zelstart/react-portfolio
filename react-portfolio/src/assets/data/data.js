@@ -75,4 +75,10 @@ const skills = [
     { name: 'Test Driven Development', classification: 'both' },
 ];
 
-export { projectData, skills }
+const goals = [
+    {name: 'Learn Python', progress: 15},
+    {name: 'Learn C#', progress: 0},
+    {name: 'Learn Java', progress: 0},
+];
+
+export { projectData, skills, goals }
