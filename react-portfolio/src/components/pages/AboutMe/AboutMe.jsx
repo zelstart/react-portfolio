@@ -10,7 +10,7 @@ function AboutMe() {
     return (
         <Container fluid>
             <Row className="justify-content-center overflow-x-hidden my-3">
-                <Col className="image-container order-2 order-md-1 d-flex justify-content-center" lg={2} md={4} sm={12}>
+                <Col className="image-container order-2 order-md-1 d-flex justify-content-center my-2" lg={2} md={4} sm={12}>
                     <img src={profilePic} alt="Profile" className="profile-pic drop-image" />
                 </Col>
                 <Col className='order-1 order-md-2' lg={7} md={7} sm={12}>

@@ -1,7 +1,7 @@
 .profile-pic {
     object-fit: cover;
     max-width: 90%;
-    box-shadow: 7px 7px 1px var(--dark); 
+    box-shadow: 7px 7px 1px var(--dark);
     margin: 8px;
 }
 
@@ -27,17 +27,20 @@
 .nav-tabs .nav-link:hover {
     color: var(--accent2)
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     color: var(--accent2) !important;
 }
+
 /* DARK MODE */
 
 body.dark-mode .about-me-text {
     color: white;
 }
 
-body.dark-mode .profile-pic{
-    box-shadow: -7px -7px 1px var(--accent1); 
+body.dark-mode .profile-pic {
+    box-shadow: -7px -7px 1px var(--accent1);
 }
 
 body.dark-mode .nav-tabs .nav-link.active {
@@ -66,4 +69,4 @@ body.dark-mode .nav-tabs .nav-link.active {
     }
 
 
-    }
+}
