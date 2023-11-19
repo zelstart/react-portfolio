@@ -101,3 +101,15 @@
 .project-link:hover {
     color: var(--acc2-light);
 }
+
+/* DARK MODE */
+
+body.dark-mode .project .card {
+    background-color: var(--acc1-light) !important;
+    padding: 6px;
+}
+
+body.dark-mode .project .project-title {
+    background: var(--acc1-light);
+    color: var(--dark) !important;
+}
