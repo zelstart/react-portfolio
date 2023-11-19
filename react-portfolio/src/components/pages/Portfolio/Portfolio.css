@@ -71,14 +71,14 @@
 /* typography */
 .project-title {
     position: absolute;
-    bottom: 0;
+    bottom: 5;
     left: 0;
     transition: all 1s ease;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem !important;
     color: white !important;
     background: var(--accent1);
-    padding: 5px 10px 5px 15px;
+    padding: 5px 10px 0px 15px;
 }
 
 .project-description {
