@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+.download {
+    font-size: 1.4rem;
+}
+
 .proficiencies h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
