@@ -4,7 +4,11 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark);
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+.resume a {
+    text-decoration: none !important;
 }
 
 .resume h2:hover {
