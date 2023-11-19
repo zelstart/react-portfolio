@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import AboutMe from './components/pages/AboutMe/AboutMe';
 import Portfolio from './components/pages/Portfolio/Portfolio';
+import Resume from './components/pages/Resume/Resume';
 import ContactMe from './components/pages/ContactMe/ContactMe';
 import TestingPage from './components/pages/TestingPage/TestingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +24,7 @@ function App() {
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contactme" element={<ContactMe />} />
-            {/* <Route path="/resume" element={<Resume />} /> */}
+            <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
         <Footer />
