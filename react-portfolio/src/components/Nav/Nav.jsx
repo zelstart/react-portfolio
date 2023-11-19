@@ -5,7 +5,7 @@ import '../../style.css';
 function Nav() {
     return (
         <nav className="container-fluid d-flex flex-column justify-content-center align-items-center">
-                <div>
+                <div className='navstuff'>
                     <a className='navlink' href="/">about me</a>
                     <a className='navlink' href="/portfolio">portfolio</a>
                     <a className='navlink' href="#">resume</a>

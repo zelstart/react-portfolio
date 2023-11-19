@@ -37,4 +37,8 @@ body.dark-mode .navlink:hover {
     letter-spacing: 0;
     margin: 0px 15px;
 }
+
+.navstuff {
+    margin-bottom: 10px;
+}
 }
