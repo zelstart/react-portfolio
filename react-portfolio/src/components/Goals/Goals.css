@@ -1,0 +1,35 @@
+.goal {
+    margin-bottom: 10px;
+}
+
+.goal h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: var(--dark);
+    margin-top: 15px;
+}
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    height: 20px;
+    width: 100%;
+}
+
+.progressBar {
+    background-color: var(--accent2);
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+/* DARK MODE */
+body.dark-mode .goal h4 {
+    color: white;
+}
+
+body.dark-mode .progressBar {
+    background-color: var(--acc1-light);
+}
