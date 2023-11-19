@@ -1,7 +1,5 @@
 /* FOOTER */
 .footer {
-    width: 100vw;
-    height: 10vh;
     background: var(--dark);
     bottom: 0;
     width: 100%;
@@ -14,4 +12,14 @@
     text-align: center;
     margin: 0;
     padding: 10px;
+}
+
+
+
+.my-icons {
+    color: white;
+    margin: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    
 }
