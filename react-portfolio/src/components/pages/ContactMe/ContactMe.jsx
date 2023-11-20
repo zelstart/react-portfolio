@@ -7,7 +7,7 @@ import '../../../style.css';
 
 
 function ContactMe() {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(true);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -70,11 +70,8 @@ function ContactMe() {
         <Container fluid>
 
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
-                <Modal.Header closeButton={false}>
+                <Modal.Header closeButton>
                     <Modal.Title>Message Sent!</Modal.Title>
-                    <Button id="custom-close" onClick={() => setShowModal(false)}>
-                        <span aria-hidden="true">&times;</span>
-                    </Button>
                 </Modal.Header>
                 <Modal.Body>Your message has been sent! I will be in touch soon.</Modal.Body>
             </Modal>

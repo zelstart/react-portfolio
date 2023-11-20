@@ -51,29 +51,6 @@
     padding: 6px;
 }
 
-/* MODAL */
-.modal-header {
-    background-color: var(--dark) !important;
-    color: white !important;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: .20rem;
-    padding: 25px 25px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    text-align: center;
-
-}
-
-#custom-close {
-    color: white !important;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    padding: 0px 5px;
-}
-
 /* DARK MODE */
 
 body.dark-mode.custom-label {
