@@ -36,9 +36,12 @@ function ContactMe() {
             return;
         }
 
-        const serverURL = process.env.NODE_ENV === 'production' ? 'https://main--zelstart.netlify.app/' : 'http://localhost:3000';
+        const serverURL = process.env.NODE_ENV === 'production' 
+  ? 'https://main--zelstart.netlify.app/.netlify/functions/send-email' 
+  : 'http://localhost:3000/send-email';
 
-        fetch(`${serverURL}/send-email`, {
+  
+        fetch(`${serverURL}/send-email` , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
