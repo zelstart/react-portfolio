@@ -5,6 +5,7 @@ import validator from 'email-validator';
 import './ContactMe.css';
 import '../../../style.css';
 
+
 function ContactMe() {
     const [formData, setFormData] = useState({
         name: '',
@@ -34,13 +35,16 @@ function ContactMe() {
             return;
         }
     
-        fetch('http://localhost:3000/send-email', {
+        const serverURL = process.env.NODE_ENV === 'production' ? 'https://main--zelstart.netlify.app/' : 'http://localhost:3000';
+
+        fetch(`${serverURL}/send-email`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(formData),
         })
+
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -48,10 +52,10 @@ function ContactMe() {
             return response.json();  
         })
         .then(data => {
-            // i know this is redundant. but even when the email was sending it was giving the negative response. so here we are. it's fine. 
             if (data) {
                 alert('Your message has been sent! I will be in touch soon.');
             } else {
+                // even when the email was sending it was giving the negative response. so here we are. it's fine. 
                 alert('Your message has been sent! I will be in touch soon.');
             }
         })
