@@ -78,7 +78,7 @@
     font-size: 2rem !important;
     color: white !important;
     background: var(--accent1);
-    padding: 5px 10px 0px 15px;
+    padding: 5px 10px 1px 15px;
 }
 
 .project-description {
@@ -112,4 +112,18 @@ body.dark-mode .project .card {
 body.dark-mode .project .project-title {
     background: var(--acc1-light);
     color: var(--dark) !important;
+}
+
+/* SMALLER SCREENS */   
+@media screen and (max-width: 768px) {
+
+    .project-title {
+        font-size: 1.25rem !important;
+    }
+    .project-description {
+        font-size: .8rem;
+    }
+    .project-link {
+        font-size: .8rem;
+    }
 }
