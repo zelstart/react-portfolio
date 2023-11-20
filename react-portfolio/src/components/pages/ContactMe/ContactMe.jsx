@@ -48,6 +48,7 @@ function ContactMe() {
             return response.json();  
         })
         .then(data => {
+            // i know this is redundant. but even when the email was sending it was giving the negative response. so here we are. it's fine. 
             if (data) {
                 alert('Your message has been sent! I will be in touch soon.');
             } else {
