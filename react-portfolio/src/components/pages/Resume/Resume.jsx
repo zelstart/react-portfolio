@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import './Resume.css';
 import '../../../style.css';
-import Resume from'../../../assets/Zel-Start-Resume.pdf'
+import ResumePDF from'../../../assets/Zel-Start-Resume.pdf'
 
 function Resume() {
     // filter skills based on classification
@@ -16,7 +16,7 @@ function Resume() {
         <Container fluid>
             <Row className="justify-content-center px-2 resume">
                 <Col className='' lg={10}>
-                <a href="Resume" download="Zel-Start-Resume.pdf"><h2>resume <FontAwesomeIcon icon={faFileArrowDown} className='download' /></h2></a>
+                <a href={ResumePDF} download="Zel-Start-Resume.pdf"><h2>resume <FontAwesomeIcon icon={faFileArrowDown} className='download' /></h2></a>
                 </Col>
             </Row>
 
