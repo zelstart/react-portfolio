@@ -19,17 +19,10 @@ function Header() {
     setDarkMode(!darkMode);
   }
 
-  // set dark mode class on body and save darkMode value to localStorage
+  // adds a text typing effect to the h1 element whenever the user first visits the page
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
-    localStorage.setItem('darkMode', darkMode);
-  }, [darkMode]);
-
-  // type effect
-  useEffect(() => {
-    const hasTyped = localStorage.getItem('hasTyped');
-
-    if (!hasTyped) { 
+    const hasTyped = sessionStorage.getItem('hasTyped');
+    if (!hasTyped && h1Ref.current) { 
       const typeEffect = (element, speed) => {
         let text = element.innerHTML;
         element.innerHTML = "";
@@ -40,21 +33,15 @@ function Header() {
             i++;
           } else {
             clearInterval(timer);
+            sessionStorage.setItem('hasTyped', 'true');
           }
         }, speed);
       }
-
-      typeEffect(h1Ref.current, 150); 
-
-      /*
-      setTimeout(() => {
-        h1Ref.current.classList.add('hide-cursor');
-      }, 20000); // hidse the cursor after 20 seconds
-      */
-
-      localStorage.setItem('hasTyped', 'true');
+    
+      typeEffect(h1Ref.current, 125);
     }
   }, []);
+  
 
   return (
     <header className="header container-fluid d-flex flex-column justify-content-center align-items-center">
