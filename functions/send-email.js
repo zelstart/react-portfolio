@@ -19,11 +19,25 @@ exports.handler = async (event, context) => {
     text: message
   };
 
-  // send mail
-  let info = await transporter.sendMail(mailOptions);
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({message: "Email sent", info: info})
+  // Add CORS headers
+  const headers = {
+    'Access-Control-Allow-Origin': '*', // https://zelstart.netlify.app
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'POST, OPTION'
   };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({ message: 'Email sent' }),
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ error: error.message }),
+    };
+  }
 };
