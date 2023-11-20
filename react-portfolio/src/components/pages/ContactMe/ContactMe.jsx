@@ -45,11 +45,10 @@ function ContactMe() {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return response.text();  
+            return response.json();  
         })
         .then(data => {
             if (data) {
-                const jsonData = JSON.parse(data);
                 alert('Your message has been sent! I will be in touch soon.');
             } else {
                 alert('Your message has been sent! I will be in touch soon.');

@@ -25,13 +25,13 @@ app.post('/send-email', (req, res) => {
         text: message,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);
-            res.status(500).send('Error sending email');
+            res.status(500).json({ message: 'Error sending email' });
         } else {
             console.log('Email sent: ' + info.response);
-            res.status(200).send('Email sent');
+            res.json({ message: 'Email sent' });
         }
     });
 });
