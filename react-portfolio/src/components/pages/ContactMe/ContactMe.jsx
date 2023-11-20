@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Row, Col, Form, Button, Container } from 'react-bootstrap';
+import { Card, Row, Col, Form, Button, Container, Modal } from 'react-bootstrap';
 import * as EmailValidator from 'email-validator';
 import validator from 'email-validator';
 import './ContactMe.css';
@@ -7,6 +7,7 @@ import '../../../style.css';
 
 
 function ContactMe() {
+    const [showModal, setShowModal] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -22,19 +23,19 @@ function ContactMe() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-    
+
         const { name, email, message } = formData;
-    
+
         if (!name || !message) {
             alert('Name and message fields cannot be blank.');
             return;
         }
-    
+
         if (!EmailValidator.validate(email)) {
             alert('Please enter a valid email address.');
             return;
         }
-    
+
         const serverURL = process.env.NODE_ENV === 'production' ? 'https://main--zelstart.netlify.app/' : 'http://localhost:3000';
 
         fetch(`${serverURL}/send-email`, {
@@ -44,29 +45,38 @@ function ContactMe() {
             },
             body: JSON.stringify(formData),
         })
-
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();  
-        })
-        .then(data => {
-            if (data) {
-                alert('Your message has been sent! I will be in touch soon.');
-            } else {
-                // even when the email was sending it was giving the negative response. so here we are. it's fine. 
-                // there should probably be no instance where the email is not sent without being caught by previous if statements
-                alert('Your message has been sent! I will be in touch soon.');
-            }
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data) {
+                    setShowModal(true);
+                } else {
+                    setShowModal(true);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (
         <Container fluid>
+            <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Message Sent</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Your message has been sent! I will be in touch soon.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModal(false)}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
             <Row className="justify-content-center">
                 <Col xs={12} sm={10} md={8} lg={5}>
                     <Card className='contact-card '>
@@ -124,7 +134,7 @@ function ContactMe() {
                     </Card>
                 </Col>
             </Row>
-            </Container>
+        </Container>
     );
 }
 
