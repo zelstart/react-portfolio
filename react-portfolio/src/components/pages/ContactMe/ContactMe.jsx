@@ -56,6 +56,7 @@ function ContactMe() {
                 alert('Your message has been sent! I will be in touch soon.');
             } else {
                 // even when the email was sending it was giving the negative response. so here we are. it's fine. 
+                // there should probably be no instance where the email is not sent without being caught by previous if statements
                 alert('Your message has been sent! I will be in touch soon.');
             }
         })
