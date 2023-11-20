@@ -36,12 +36,12 @@ function ContactMe() {
             return;
         }
 
-        const serverURL = process.env.NODE_ENV === 'production' 
-  ? 'https://zelstart.netlify.app/.netlify/functions/send-email' 
-  : 'http://localhost:3000/send-email';
+        const serverURL = process.env.NODE_ENV === 'production'
+            ? 'https://zelstart.netlify.app/.netlify/functions/send-email'
+            : 'http://localhost:3000/send-email';
 
 
-        fetch(`${serverURL}` , {
+        fetch(`${serverURL}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -70,8 +70,11 @@ function ContactMe() {
         <Container fluid>
 
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
-                <Modal.Header closeButton>
+                <Modal.Header closeButton={false}>
                     <Modal.Title>Message Sent!</Modal.Title>
+                    <Button id="custom-close" onClick={() => setShowModal(false)}>
+                        <span aria-hidden="true">&times;</span>
+                    </Button>
                 </Modal.Header>
                 <Modal.Body>Your message has been sent! I will be in touch soon.</Modal.Body>
             </Modal>
