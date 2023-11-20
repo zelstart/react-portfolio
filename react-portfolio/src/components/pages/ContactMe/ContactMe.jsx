@@ -40,8 +40,8 @@ function ContactMe() {
   ? 'https://main--zelstart.netlify.app/.netlify/functions/send-email' 
   : 'http://localhost:3000/send-email';
 
-  
-        fetch(`${serverURL}/send-email` , {
+
+        fetch(`${serverURL}` , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
