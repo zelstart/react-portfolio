@@ -37,7 +37,7 @@ function ContactMe() {
         }
 
         const serverURL = process.env.NODE_ENV === 'production' 
-  ? 'https://zelstart.netlify.app/send-email' //.netlify/functions/send-email
+  ? 'https://zelstart.netlify.app/.netlify/functions/send-email' 
   : 'http://localhost:3000/send-email';
 
 
