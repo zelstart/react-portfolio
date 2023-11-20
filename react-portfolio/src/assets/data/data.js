@@ -51,6 +51,7 @@ const projectData = [
     },
 ];
 
+// TODO: Add another property to each object called "proficiency" and set it to a number between 1 and 3
 
 const skills = [
     { name: 'HTML', classification: 'frontend' },
