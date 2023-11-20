@@ -7,9 +7,6 @@ require('dotenv').config();
 app.use(cors());  
 app.use(express.json());
 
-console.log("Email:", process.env.EMAIL);
-console.log("Password:", process.env.PASSWORD ? "Password is set" : "Password is not set");
-
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
 
