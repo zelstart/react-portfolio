@@ -65,9 +65,10 @@ function ContactMe() {
 
     return (
         <Container fluid>
-            <Modal show={showModal} onHide={() => setShowModal(false)}>
+
+            <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Message Sent</Modal.Title>
+                    <Modal.Title>Message Sent!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Your message has been sent! I will be in touch soon.</Modal.Body>
                 <Modal.Footer>
