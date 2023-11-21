@@ -7,7 +7,6 @@ import AboutMe from './components/pages/AboutMe/AboutMe';
 import Portfolio from './components/pages/Portfolio/Portfolio';
 import Resume from './components/pages/Resume/Resume';
 import ContactMe from './components/pages/ContactMe/ContactMe';
-import TestingPage from './components/pages/TestingPage/TestingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
