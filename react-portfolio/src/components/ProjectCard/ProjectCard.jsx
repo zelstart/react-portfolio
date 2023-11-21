@@ -2,21 +2,14 @@ import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 
 function ProjectCard({ project }) {
-    const [isTapped, setIsTapped] = useState(false);
-
-    const handleCardTap = (e) => {
-        if (!isTapped) {
-            e.preventDefault();
-            setIsTapped(true);
-        }
-    }
+    const [isClicked, setIsClicked] = useState(false);
 
     return (
-        <Card className='project-card' onClick={handleCardTap}>
-            <Card.Img variant="top" src={project.image} alt={project.name} className={`project-img ${isTapped ? 'darken' : ''}`} />
+        <Card className='project-card' onClick={() => setIsClicked(true)}>
+            <Card.Img variant="top" src={project.image} alt={project.name} className={`project-img ${isClicked ? 'darken' : ''}`} />
             <div className="card-img-overlay d-flex flex-column justify-content-end">
                 <Card.Title className='project-title'>{project.name}</Card.Title>
-                {isTapped && (
+                {isClicked && (
                     <div className="project-description-container">
                         <Card.Text className="project-description">
                             {project.description}

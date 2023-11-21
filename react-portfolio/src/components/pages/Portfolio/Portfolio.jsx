@@ -10,7 +10,7 @@ function Portfolio() {
     return (
         <Row className="row justify-content-center p-5">
             {projectData.map((project, index) => (
-                <Col className='project' md={4} key={index}>
+                <Col className='project' md={6} lg={6} xl={4} key={index}>
                     <ProjectCard project={project} />
                 </Col>
             ))}
