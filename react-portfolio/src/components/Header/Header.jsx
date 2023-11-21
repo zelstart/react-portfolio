@@ -16,7 +16,14 @@ function Header() {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', newDarkMode);
+    if (newDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   }
 
   // adds a text typing effect to the h1 element whenever the user first visits the page
