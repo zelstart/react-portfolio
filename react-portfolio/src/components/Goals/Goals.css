@@ -35,5 +35,5 @@ body.dark-mode .goal h4 {
 }
 
 body.dark-mode .progressBar {
-    background-color: var(--acc1-light);
+    background-color: var(--accent1);
 }
