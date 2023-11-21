@@ -18,7 +18,7 @@ function App() {
         <Header />
         < Nav />
         </div>
-        <main className="main-content">
+        <main className="main-content overflow-x-hidden">
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
