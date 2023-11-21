@@ -14,7 +14,7 @@ function AboutMe() {
                 <Col className="image-container order-2 order-lg-1 d-flex justify-content-center my-2" lg={2} md={12} sm={12}>
                     <img src={profilePic} alt="Profile" className="profile-pic drop-image" />
                 </Col>
-                <Col className='order-1 order-lg-2' lg={8} md={12} sm={12}>
+                <Col className='order-1 order-lg-2' lg={7} md={12} sm={12}>
                     <Tabs defaultActiveKey="who-i-am" id="">
 
                         <Tab eventKey="who-i-am" title="who i am">
