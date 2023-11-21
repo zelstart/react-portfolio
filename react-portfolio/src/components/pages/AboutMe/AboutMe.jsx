@@ -11,10 +11,10 @@ function AboutMe() {
     return (
         <Container fluid>
             <Row className="justify-content-center overflow-x-hidden my-3">
-                <Col className="image-container order-2 order-md-1 d-flex justify-content-center my-2" lg={2} md={4} sm={12}>
+                <Col className="image-container order-2 order-lg-1 d-flex justify-content-center my-2" lg={2} md={12} sm={12}>
                     <img src={profilePic} alt="Profile" className="profile-pic drop-image" />
                 </Col>
-                <Col className='order-1 order-md-2' lg={8} md={6} sm={12}>
+                <Col className='order-1 order-lg-2' lg={8} md={12} sm={12}>
                     <Tabs defaultActiveKey="who-i-am" id="">
 
                         <Tab eventKey="who-i-am" title="who i am">

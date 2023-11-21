@@ -51,22 +51,22 @@ body.dark-mode .nav-tabs .nav-link.active {
 
 /* SMALLER SCREENS */
 
+@media screen and (max-width: 992px) {
+        .profile-pic {
+            max-width: 50% !important;
+            margin: 0;
+        }
 
-@media screen and (max-width: 850px) {
+}
+
+@media screen and (max-width: 576px) {
     .nav-tabs .nav-link {
-        font-size: .8rem !important;
+        font-size: 0.9rem !important;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
     .nav-tabs .nav-link {
-        font-size: .7rem !important;
+        font-size: 0.7rem !important;
     }
-
-    .profile-pic {
-        max-width: 50% !important;
-        margin: 0;
-    }
-
-
 }
