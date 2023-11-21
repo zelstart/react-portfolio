@@ -3,7 +3,7 @@
 
 ## Table Of Contents
 - [Description](#description)
-- [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Dependencies](#dependencies)
 - [Credits](#credits)
 - [License](#license)
@@ -11,11 +11,12 @@
 
 ## Description
 
-## Usage
+## Screenshots
 Please note that this website is mobile friendly on screens as small as 380px wide! Anything smaller than that will look funny :)
 
 ## Dependencies
 
 ## Credits
 
-## Deployed Sitte
+## Deployed Site
+https://zelstart.netlify.app/
