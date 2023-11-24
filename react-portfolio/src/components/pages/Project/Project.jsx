@@ -1,0 +1,1 @@
+// i want to create a component that will display more details about the projects. 
