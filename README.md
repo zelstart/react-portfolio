@@ -11,6 +11,5 @@ Please note that this website is mobile friendly on screens as small as 380px wi
 ## Credits
 [Lets Build UI](https://www.letsbuildui.dev/articles/a-typing-text-effect-with-react-hooks/) - Adding the typing effect to the header
 
-
 ## Deployed Site
 https://zelstart.netlify.app/
