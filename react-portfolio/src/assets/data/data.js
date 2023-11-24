@@ -31,14 +31,14 @@ const projectData = [
     {
         name: 'Weather Dashboard',
         description: 'A simple weather dashboard that allows the user to search for a US city and view the current weather conditions as well as the 5-day forecast for that city.',
-        liveWebsite: null,
+        liveWebsite: 'https://zelstart.github.io/weather-dashboard',
         githubRepo: 'https://github.com/zelstart/weather-dashboard',
         image: WeatherDashboard,
     },
     {
         name: 'Tunecast // Group Project',
         description: 'A web application using the Weather API and the YouTube API to fetch the users weather forecast and provide them with a playlist of songs based on their weather conditions.',
-        liveWebsite: 'https://zelstart.github.io/weather-dashboard',
+        liveWebsite: 'https://zelstart.github.io/tunecast/',
         githubRepo: 'https://github.com/zelstart/tunecast',
         image: Tunecast,
     },
