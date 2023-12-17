@@ -4,7 +4,7 @@ import ECommerceBackend from '../images/project-images/pexels-544917.jpg';
 import WeatherDashboard from '../images/project-images/weather-dashboard.png';
 import Tunecast from '../images/project-images/tunecast.png';
 import MyRecipeBook from '../images/project-images/my-recipe-book.png';
-import PokemonTeamBuilder from '../images/project-images/pokemon-team-builder.png';
+import PokemonTeamBuilder from '../images/project-images/PokemonTeamBuilder.png';
 
 
 const projectData = [
