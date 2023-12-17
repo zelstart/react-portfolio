@@ -3,6 +3,7 @@
     font-weight: 500;
     margin: 2px;
     font-size: .9rem;
+    cursor: default;
 }
 
 body:not(.dark-mode) .skills {
