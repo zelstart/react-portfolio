@@ -16,7 +16,7 @@ function Resume() {
         <Container fluid>
             <Row className="justify-content-center px-2 resume">
                 <Col className='' lg={10}>
-                <a href={ResumePDF} download="Zel-Start-Resume.pdf"><h2>resume <FontAwesomeIcon icon={faFileArrowDown} className='download' /></h2></a>
+                <h2><a href={ResumePDF} download="Zel-Start-Resume.pdf">resume <FontAwesomeIcon icon={faFileArrowDown} className='download' /></a></h2>
                 </Col>
             </Row>
 

@@ -1,17 +1,16 @@
-.resume h2 {
+.resume h2 a {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark);
-    cursor: pointer;   
 }
 
-.resume a {
+.resume h2 a {
     text-decoration: none !important;
 }
 
-.resume h2:hover {
+.resume h2 a:hover {
     color: var(--accent2);
     cursor: pointer;
 }
