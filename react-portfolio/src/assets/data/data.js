@@ -85,7 +85,7 @@ const skills = [
 ];
 
 const goals = [
-    {name: 'Learn TypeScript', progress: 50}
+    {name: 'Learn TypeScript', progress: 50},
     {name: 'Learn Tailwind', progress: 25},
     {name: 'Learn Python', progress: 15},
     {name: 'Learn C#', progress: 0},
