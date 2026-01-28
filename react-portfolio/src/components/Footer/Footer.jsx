@@ -12,7 +12,7 @@ function Footer() {
                 <Row className="justify-content-center">
                     <Col xs="auto">
                         <a href='https://github.com/zelstart' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className='my-icons' /></a>
-                        <a href='https://www.linkedin.com/in/zel-start-8b05382a0/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className='my-icons' /></a>
+                        <a href='https://www.linkedin.com/in/elisabeth-start-pomeroy-21b85b240/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className='my-icons' /></a>
                         <a href='https://stackoverflow.com/users/19686794/zel' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faStackOverflow} className='my-icons' /></a>
                     </Col>
                 </Row>
