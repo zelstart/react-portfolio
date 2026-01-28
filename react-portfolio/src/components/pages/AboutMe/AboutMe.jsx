@@ -18,7 +18,7 @@ function AboutMe() {
                     <Tabs defaultActiveKey="who-i-am" id="">
 
                         <Tab eventKey="who-i-am" title="who i am">
-                            <p className='about-me-text'>Hey! My name is Zel, and I have recently finished up the Full Stack Web Dev bootcamp program at UNH. I have a decent amount of experience with HTML & CSS, and wanted to expand on my skills to turn a hobby into a career. I love learning new skills, and am constantly trying to improve and challenge myself. I'm continuing to learn and grow my web dev skills on my own - currently I'm working on learning C#, .NET, and Python and am looking for opportunities to use these skills.  </p>
+                            <p className='about-me-text'>Hey! My name is Zel, and I am a recent graduate of SNHU. I have a decent amount of experience with HTML & CSS, and wanted to expand on my skills to turn a hobby into a career. I love learning new skills, and am constantly trying to improve and challenge myself. I'm continuing to learn and grow my web dev skills on my own - currently I'm working on learning C#, .NET, and Python and am looking for opportunities to use these skills.  </p>
                         </Tab>
 
                         <Tab className='' eventKey="skills" title="what i can do">
